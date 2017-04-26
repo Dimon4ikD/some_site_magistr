@@ -1,0 +1,47 @@
+-#%h1 Listing users
+-#
+-#%table
+-#  %thead
+-#    %tr
+-#      %th
+-#      %th
+-#      %th
+-#
+-#  %tbody
+-#    - @users.each do |user|
+-#      %tr
+-#        %td= link_to 'Show', user
+-#        %td= link_to 'Edit', edit_user_path(user)
+-#        %td= link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Are you sure?' }
+-#
+-#%br
+-#
+-#= link_to 'New User', new_user_path
+
+
+.page-header
+  <h2>Пользователи</h2>
+.row
+  .list-group
+    .list-group-item.active
+      .row
+        .col-md-3
+          Имя
+        .col-md-2
+          Почта
+        .col-md-1
+          Роль
+  .list-group
+    - @users.each do |user|
+      .list-group-item
+        .row
+          .col-md-3
+            #{user.name}
+          .col-md-2
+            #{user.email}
+
+          = link_to '', user, class: "btn btn-info glyphicon glyphicon-search", title: "Показать"
+          = link_to '', edit_user_path(user), class: "btn btn-warning glyphicon glyphicon-pencil", title:"Редактировать"
+          = link_to '', user, method: :delete, data: { confirm: 'ВЫ уверены?' }, class: "btn btn-danger glyphicon glyphicon-trash", title: "Удалить"
+  %br/
+= link_to ' Новый пользователь', new_user_path, class:"btn btn-primary fa fa-plus"

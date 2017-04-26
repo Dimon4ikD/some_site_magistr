@@ -1,0 +1,15 @@
+%h1 Welcome и добро пожаловать
+
+%p So there is the beginning of the greatest rails app about some shop of products with the interesting goods.
+%p
+%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat lobortis felis id tincidunt. Vestibulum consequat sodales vehicula. Phasellus auctor leo vitae tortor porttitor, et scelerisque justo venenatis. Duis sit amet tellus aliquet, ornare ex eget, elementum massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce vitae massa id tellus varius sodales sit amet et felis. Cras gravida sapien quam, vel condimentum arcu fermentum id.
+
+Maecenas auctor nulla sit amet dolor vulputate lobortis. Nam ac congue tortor. Nulla vel luctus magna, hendrerit congue enim. Sed arcu odio, rutrum eget vestibulum ac, porta eu nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse ornare metus sit amet ligula varius, vitae mollis arcu vehicula. In blandit fermentum placerat. Ut et nulla nibh. Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed id velit euismod, rutrum metus a, aliquet mauris. Aenean auctor leo turpis, sed tempus urna fringilla in. Nullam dictum consectetur fringilla. Duis hendrerit, felis nec accumsan convallis, turpis magna pulvinar purus, sed varius enim ligula ac lorem.
+
+Sed eu nibh ut dolor varius tempus eget a massa. Pellentesque dictum nisl enim, non accumsan mauris varius nec.
+-#.col-sm-3
+-#  %p
+-#.col-sm-10
+-#  = render 'form'
+- if @current_user.blank?
+  = render 'form'

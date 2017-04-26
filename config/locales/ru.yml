@@ -1,0 +1,34 @@
+ru:
+  app:
+    name: Simple Site
+    company:
+      short_name: SS
+      department:
+  helpers:
+    submit:
+      create: Создать
+      submit: Отправить
+      update: Обновить
+
+  views:
+    pagination:
+      first: ⇤
+      last: ⇥
+      previous: ←
+      next: →
+      truncate: …
+  activerecord:
+    models:
+      user: Пользователь
+    attributes:
+      user:
+        email: Электронная почта
+        name: Имя
+        password: Пароль
+        password_confirmation: Подтверждение пароля
+    errors:
+      models:
+        person:
+          attributes:
+            snils:
+              check_sum: имеет неправильную контрольную сумму
